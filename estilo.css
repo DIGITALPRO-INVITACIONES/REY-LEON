@@ -223,3 +223,25 @@ main .section:not(.welcome)::after{content:'✦';display:block;position:absolute
 .cover #open:hover{background:#354526;color:#fff}
 .character-welcome{width:min(84%,310px);margin:22px auto 26px}
 .character-welcome img{max-height:365px;width:100%;object-fit:contain}
+/* Harmonious, larger editorial typography across the invitation. */
+:root{--display:Lora,Georgia,serif;--sans:Lora,Georgia,serif}
+body{font-size:18px;line-height:1.7}
+h1,h2,main h2,.welcome h2{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:-.025em;line-height:1.2}
+.cover h1{font-size:clamp(53px,13vw,82px);font-weight:500;letter-spacing:-.045em;margin:12px 0}
+main h2,.welcome h2{font-size:clamp(34px,8.4vw,52px)}
+.eyebrow,main .eyebrow,.closing .eyebrow,.letter-kicker{font-size:14px;line-height:1.6;font-weight:600;letter-spacing:.08em;color:#756039}
+.cover-line{font-size:clamp(21px,5.5vw,28px);line-height:1.45;max-width:340px;margin-inline:auto}
+.cover-date,.welcome-date,.date-ribbon{font-size:16px;letter-spacing:.045em;line-height:1.6;font-weight:600}
+.cover-date{margin-top:20px;color:#3f412c}
+.movie-cover .cover-copy{padding-top:clamp(16px,5svh,55px)}
+.intro,.welcome-letter .intro,.rsvp .scene-card>p,.cave-caption{font-size:20px;line-height:1.7;font-style:italic}
+.host-label{font-size:16px;letter-spacing:.025em}
+.host{font-size:clamp(26px,6.6vw,34px);font-style:italic;line-height:1.45}
+.button,.outline,.cover #open{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.4}
+.controls button{font-size:14px;min-height:42px;padding:7px 12px}
+.quick-nav a{font-size:16px}.footer-links,.credit,.digitalpro{font-size:16px}
+.month{font-size:32px;font-style:italic}.month span,.week,.countdown span{font-size:14px}.day{font-size:17px;min-height:41px}
+.countdown strong{font-family:var(--serif);font-weight:500;font-style:italic}
+.address,.venue .when,.venue-type{font-size:18px;line-height:1.65}
+.character-welcome{width:min(96%,390px);margin:24px auto 28px}.character-welcome img{height:auto;max-height:none}
+@media(max-width:370px){.controls button{font-size:13px}.welcome-date{font-size:15px}.cover h1{font-size:49px}.cover .eyebrow{font-size:13px}}
