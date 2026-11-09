@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 930">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#ffe5a3"/><stop offset=".55" stop-color="#f4b463"/><stop offset="1" stop-color="#a94f37"/></linearGradient>
+    <linearGradient id="grassland" x2="0" y2="1"><stop stop-color="#b77a3d"/><stop offset="1" stop-color="#51482e"/></linearGradient>
+    <linearGradient id="rock" x2="0" y2="1"><stop stop-color="#ba7c43"/><stop offset="1" stop-color="#543b29"/></linearGradient>
+    <linearGradient id="fur" x2=".3" y2="1"><stop stop-color="#ffe3a3"/><stop offset="1" stop-color="#d79b48"/></linearGradient>
+    <radialGradient id="sun"><stop offset=".49" stop-color="#ffedac"/><stop offset=".51" stop-color="#ffdf91" stop-opacity=".58"/><stop offset="1" stop-color="#ffdd8b" stop-opacity="0"/></radialGradient>
+    <g id="acacia">
+      <path d="M90 160q7-42 5-66L67 62l8-3 24 27 12-49 7 1-12 53 27-23 5 3-32 30q-2 30 7 59Z"/>
+      <path d="M6 65c8-12 29-19 53-17-1-13 18-22 40-19 15-14 43-11 60 0 22-2 42 8 45 19 19 1 33 6 36 13-25 15-56 8-76 9-44 4-61 5-85 0-24 2-48 5-73-5Z"/>
+    </g>
+    <g id="blade" fill="none" stroke-linecap="round">
+      <path d="M0 0q-5-30-19-43M0 0q-1-37 9-64M0 0q10-31 28-41M0 0q-12-22-30-23" stroke="currentColor" stroke-width="3"/>
+    </g>
+    <g id="leaf" fill="currentColor">
+      <path d="M0 0C-42-18-51-52-35-74-18-67 5-40 0 0Z"/>
+      <path d="M0 0C3-41 32-67 54-68 56-48 39-14 0 0Z"/>
+      <path d="M0 0C-8-58 1-98 18-115 32-89 20-34 0 0Z"/>
+    </g>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h650v930H0z"/>
+  <circle cx="163" cy="547" r="181" fill="url(#sun)"/>
+  <path d="M0 540q87-71 158-34t153 42q64-4 146-60t193 13v165H0Z" fill="#bb734d" opacity=".44"/>
+  <path d="M0 602q98-38 212-25t211-12q151-31 227 16v166H0Z" fill="#b66f3c" opacity=".74"/>
+  <use href="#acacia" transform="translate(7 470) scale(.67)" fill="#66462f"/>
+  <use href="#acacia" transform="translate(474 494) scale(.68)" fill="#704b31"/>
+  <use href="#acacia" transform="translate(245 555) scale(.28)" fill="#815534"/>
+  <path d="M0 647q92-33 191-19t177 1q132-24 282 8v293H0Z" fill="url(#grassland)"/>
+  <path d="M0 744q106-52 241-18t221 15q104-9 188-36v225H0Z" fill="#725331"/>
+  <g color="#e7b566" opacity=".76">
+    <use href="#blade" x="58" y="723"/><use href="#blade" x="103" y="746"/><use href="#blade" x="153" y="686"/>
+    <use href="#blade" x="501" y="710"/><use href="#blade" x="552" y="726"/><use href="#blade" x="605" y="691"/>
+  </g>
+  <path d="m129 809 66-54 128-14 105 12 79 48 26 129H77Z" fill="url(#rock)" stroke="#65432e" stroke-width="2"/>
+  <path d="m129 809 127-12 71 21 180-17-79-48-105-12-128 14Z" fill="#d49758"/>
+  <path d="m77 930 52-121 127-12-72 133Zm250-112 180-17 26 129H379Z" fill="#785136" opacity=".65"/>
+  <path d="m118 854 89-15m221 18 68-20m-218 33 28 41" fill="none" stroke="#d2a066" stroke-width="2" opacity=".53"/>
+  <!-- Cachorro sentado y su compañero dormido. -->
+  <g transform="translate(189 612)" stroke="#8b5930" stroke-width="3" stroke-linejoin="round">
+    <path d="M110 129c32 22 57 5 57-16" fill="none" stroke="#b47c3d" stroke-width="9" stroke-linecap="round"/>
+    <path d="M160 120q-2-18 10-22 11 8-1 22Z" fill="#84542b"/>
+    <path d="M42 95q20-32 53-16 35 18 29 66-8 22-42 17l-56-3q-14-22 16-64Z" fill="url(#fur)"/>
+    <path d="M42 112q-8 22-9 36m34-33q-7 20-4 35" fill="none"/>
+    <ellipse cx="39" cy="157" rx="20" ry="10" fill="#ecc27a"/>
+    <ellipse cx="73" cy="157" rx="20" ry="10" fill="#ecc27a"/>
+    <circle cx="35" cy="33" r="20" fill="#e3ac60"/><circle cx="98" cy="30" r="20" fill="#e3ac60"/>
+    <circle cx="35" cy="34" r="11" fill="#b87c52" stroke="none"/><circle cx="98" cy="30" r="11" fill="#b87c52" stroke="none"/>
+    <path d="M22 59q3-30 25-34l14-12-1 11 19-12-2 14q36 6 36 37 0 35-45 40-42-1-46-44Z" fill="url(#fur)"/>
+    <path d="M36 78q12-13 30-7 19-9 35 4-4 22-31 23-27 0-34-20Z" fill="#fff0c6" stroke="none"/>
+    <ellipse cx="48" cy="61" rx="4.8" ry="7.3" fill="#473127" stroke="none"/>
+    <ellipse cx="88" cy="59" rx="4.8" ry="7.3" fill="#473127" stroke="none"/>
+    <circle cx="50" cy="59" r="1.5" fill="#fff7db" stroke="none"/><circle cx="90" cy="57" r="1.5" fill="#fff7db" stroke="none"/>
+    <path d="M59 72q9-5 18 0-3 8-9 9-6-2-9-9Z" fill="#86513d" stroke="none"/>
+    <path d="M68 81v4m0 0q-7 8-14 2m14-2q7 7 13 0" fill="none" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(338 706)" stroke="#9b6537" stroke-width="2.5">
+    <path d="M91 63q32 4 36-17" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="68" cy="51" rx="49" ry="24" fill="url(#fur)"/>
+    <circle cx="20" cy="35" r="12" fill="#dda65b"/>
+    <circle cx="53" cy="32" r="11" fill="#dda65b"/>
+    <ellipse cx="34" cy="52" rx="32" ry="22" fill="url(#fur)"/>
+    <ellipse cx="24" cy="62" rx="18" ry="10" fill="#fce2ae" stroke="none"/>
+    <path d="M30 52q5 5 10 0m-29 6q4 4 8 0" fill="none" stroke="#6b4530" stroke-linecap="round"/>
+    <ellipse cx="54" cy="71" rx="17" ry="7" fill="#efbd73"/>
+  </g>
+  <g color="#263824">
+    <use href="#leaf" transform="translate(24 930) scale(1.25)"/><use href="#leaf" transform="translate(80 930) rotate(-23) scale(.76)"/>
+    <use href="#leaf" transform="translate(626 930) scale(-1.36 1.36)"/><use href="#leaf" transform="translate(575 930) rotate(26) scale(.83)"/>
+  </g>
+  <g color="#d49d54"><use href="#blade" x="111" y="930"/><use href="#blade" x="542" y="930"/></g>
+  <g fill="#ffe5a1" opacity=".78"><circle cx="145" cy="568" r="3"/><circle cx="520" cy="594" r="2"/><circle cx="302" cy="584" r="2.4"/><circle cx="445" cy="676" r="2"/><circle cx="109" cy="650" r="2.6"/></g>
+</svg>

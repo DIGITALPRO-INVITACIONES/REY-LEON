@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#263322">
+  <meta name="description" content="Acompáñanos a celebrar este baby shower el domingo 15 de noviembre de 2026 a las 15:00 en Yuppi Land.">
+  <title>Baby shower · Una aventura en la sabana</title>
+  <link rel="stylesheet" href="estilo.css?v=8">
+  <script src="invitacion.js?v=7" defer></script>
+</head>
+<body>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="paw" viewBox="0 0 48 48">
+        <ellipse cx="8" cy="19" rx="5" ry="6.5" transform="rotate(-24 8 19)"/>
+        <ellipse cx="18" cy="11" rx="5" ry="7" transform="rotate(-12 18 11)"/>
+        <ellipse cx="30" cy="11" rx="5" ry="7" transform="rotate(12 30 11)"/>
+        <ellipse cx="40" cy="19" rx="5" ry="6.5" transform="rotate(24 40 19)"/>
+        <path d="M24 21c6 0 8 5 12 9 6 7 2 14-5 13-3 0-5-2-7-2s-4 2-7 2c-7 1-11-6-5-13 4-4 6-9 12-9Z"/>
+      </symbol>
+      <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v5m10-5v5M3 11h18m-12 5h6"/></symbol>
+      <symbol id="heart" viewBox="0 0 24 24"><path d="M12 21S3 15 3 8.5C3 4 9 2 12 7c3-5 9-3 9 1.5C21 15 12 21 12 21Z"/></symbol>
+    </defs>
+  </svg>
+  <audio id="music" src="assets/rey-leon.mp3" loop preload="none"></audio>
+  <div class="embers" id="embers" aria-hidden="true"></div>
+  <section id="cover" class="cover movie-cover" aria-labelledby="cover-title">
+    <div class="cover-copy">
+      <svg class="paw" aria-hidden="true"><use href="#paw"/></svg>
+      <p class="eyebrow">UNA AVENTURA EN LA SABANA</p>
+      <h1 id="cover-title">Baby shower</h1>
+      <p class="cover-line">Un pequeño león está por llegar</p>
+      <p class="cover-date">15 · NOVIEMBRE · 2026</p>
+      <button class="button" id="open" type="button">Abrir invitación <svg class="paw" aria-hidden="true"><use href="#paw"/></svg></button>
+    </div>
+  </section>
+  <div class="controls" id="controls" hidden>
+    <button type="button" id="music-toggle" aria-pressed="false">♫ Música</button>
+    <button type="button" id="motion-toggle" aria-pressed="true">✦ Pausar animación</button>
+  </div>
+  <main id="invitation" hidden>
+    
+    <header class="welcome section" id="inicio">
+      <div class="paw-trail" aria-hidden="true"><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg></div>
+      <p class="eyebrow">EL COMIENZO DE UNA GRAN AVENTURA</p>
+      <h2 tabindex="-1">Un pequeño león<br>está por llegar</h2>
+      <figure class="character-welcome"><img src="assets/simba-transparente.png" width="360" height="360" alt="Simba" fetchpriority="high"></figure>
+      <p class="welcome-date">15 NOVIEMBRE 2026 <span>•</span> 15:00 HRS</p>
+      <div class="welcome-letter"><p class="letter-kicker">ESTÁS INVITADO A NUESTRO BABY SHOWER</p>
+      <p class="intro">Antes de escuchar su primer rugido, queremos reunir a las personas que harán de su mundo un lugar lleno de cariño.</p>
+      <p class="host-label">Te invita con cariño</p>
+      <p class="host">Enrique Octavio<br>Quezada Oblitas</p></div>
+    </header>
+    <section class="cave section reveal" aria-labelledby="cave-title">
+      <div class="scene-card">
+      <p class="eyebrow">EL AMOR YA TIENE UN LATIDO</p>
+      <h2 id="cave-title">Nuestra aventura<br>ya comenzó</h2>
+      <div class="cave-arch">
+        <div class="cave-screen">
+          <video id="memory" controls playsinline preload="metadata" poster="assets/video-portada.webp" aria-label="Video del baby shower">
+            <source src="assets/recuerdo.mp4" type="video/mp4">
+            <a href="assets/recuerdo.mp4">Abrir video</a>
+          </video>
+        </div>
+      </div>
+      <p class="cave-caption">Todavía no te conocemos y ya llenas nuestro mundo de amor.</p>
+    
+      </div>
+    </section>
+    <section class="date section reveal" aria-labelledby="date-title">
+      <div class="scene-card">
+      <p class="eyebrow">GUARDA ESTA FECHA</p>
+      <h2 id="date-title">La sabana nos espera</h2><p class="date-ribbon">DOMINGO 15 · 15:00 HRS</p>
+      <div class="calendar" aria-label="Noviembre de 2026. Domingo 15, baby shower.">
+        <p class="month">Noviembre <span>2026</span></p>
+        <div class="week" aria-hidden="true"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+        <div class="days" id="calendar-days"></div>
+      </div>
+      <a class="outline" href="baby-shower.ics" download><svg class="icon" aria-hidden="true"><use href="#calendar"/></svg>Guardar en calendario</a>
+      <p class="eyebrow countdown-label" id="countdown-label">FALTA POQUITO PARA CELEBRAR</p>
+      <div class="countdown" role="timer" aria-label="Tiempo para el baby shower">
+        <div><strong id="days">00</strong><span>Días</span></div>
+        <div><strong id="hours">00</strong><span>Horas</span></div>
+        <div><strong id="minutes">00</strong><span>Minutos</span></div>
+        <div><strong id="seconds">00</strong><span>Segundos</span></div>
+      </div>
+    
+      </div>
+    </section>
+    <section class="venue section reveal" id="ubicacion" aria-labelledby="venue-title">
+      <div class="scene-card">
+      <svg class="icon venue-pin" aria-hidden="true"><use href="#pin"/></svg>
+      <p class="eyebrow">SIGUE LAS HUELLAS</p>
+      <h2 id="venue-title">Yuppi Land</h2><figure class="character-friends"><img src="assets/amigos-transparentes.png" width="920" height="441" alt="Simba, Timón y Pumba caminando juntos" loading="lazy"></figure>
+      <p class="venue-type">Salón de eventos infantiles</p>
+      <p class="when"><time datetime="2026-11-15T15:00:00-04:00">Domingo 15 de noviembre · 15:00</time></p>
+      <p class="address">Entre Díaz Romero y pasaje Florida,<br>frente al mercado de Miraflores.</p>
+      <a class="button" href="https://maps.app.goo.gl/L8nVHPmr3bE8D58C8" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a>
+    
+      </div>
+    </section>
+    <section class="rsvp section reveal" id="confirmar" aria-labelledby="rsvp-title">
+      <div class="scene-card">
+      <svg class="paw" aria-hidden="true"><use href="#paw"/></svg>
+      <h2 id="rsvp-title">¿Nos acompañas?</h2>
+      <p>Tu presencia hará más especial la bienvenida de nuestro pequeño león.</p>
+      <a class="button" id="rsvp" href="https://wa.me/59175881128" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#heart"/></svg>Confirmar asistencia</a>
+    
+      </div>
+    </section>
+    <footer class="closing section">
+      <p class="eyebrow">HASTA PRONTO, EN LA SABANA</p>
+      <h2>¡Te esperamos!</h2>
+      <div class="footer-links">
+        <button class="outline" type="button" id="share">Compartir invitación ↗</button>
+        <a href="#inicio">Volver al inicio ↑</a>
+      </div>
+      <p id="share-status" role="status"></p>
+      <p class="credit">Invitaciones digitales</p>
+      <a class="digitalpro" href="https://wa.me/59179352293" target="_blank" rel="noopener">DigitalPro · 79352293 ↗</a>
+    </footer>
+  </main>
+  <nav id="quick-nav" class="quick-nav" aria-label="Accesos rápidos" hidden>
+    <a href="#ubicacion"><svg class="icon" aria-hidden="true"><use href="#pin"/></svg>Ubicación</a>
+    <a href="#confirmar"><svg class="icon" aria-hidden="true"><use href="#heart"/></svg>Confirmar</a>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DigitalPro//Baby Shower//ES
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:baby-shower-enrique-20261115@digitalpro
+DTSTAMP:20261108T120000Z
+DTSTART:20261115T190000Z
+SUMMARY:Baby shower de Enrique
+LOCATION:Yuppi Land
+DESCRIPTION:Entre Díaz Romero y pasaje Florida. Frente al mercado de Miraflores.
+URL:https://maps.app.goo.gl/L8nVHPmr3bE8D58C8
+END:VEVENT
+END:VCALENDAR
